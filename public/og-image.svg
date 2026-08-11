@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Perfil Survey</title>
+  <desc id="desc">Pesquisa completa, do planejamento ao resultado.</desc>
+  <rect width="1200" height="630" fill="#f4f8fa"/>
+  <circle cx="1010" cy="110" r="260" fill="#d7eef7"/>
+  <circle cx="1090" cy="520" r="220" fill="#ffe1c7" opacity=".75"/>
+  <rect x="80" y="80" width="88" height="88" rx="22" fill="#00658c"/>
+  <path d="M106 119c14-28 38-34 52-21 10 10 9 27-4 38-16 14-27 27-32 43-6-16-17-29-32-43-13-11-14-28-4-38 14-13 38-7 52 21z" fill="#fff" opacity=".95"/>
+  <text x="80" y="260" fill="#113b4d" font-family="Arial, sans-serif" font-size="34" font-weight="700">Perfil Survey</text>
+  <text x="80" y="350" fill="#113b4d" font-family="Arial, sans-serif" font-size="64" font-weight="700">Pesquisa completa,</text>
+  <text x="80" y="425" fill="#00658c" font-family="Arial, sans-serif" font-size="64" font-weight="700">do plano ao resultado.</text>
+  <text x="82" y="500" fill="#58717d" font-family="Arial, sans-serif" font-size="25">Planeje · colete · acompanhe · decida</text>
+  <g transform="translate(820 205)">
+    <rect width="270" height="190" rx="20" fill="#fff" stroke="#c6dce5" stroke-width="3"/>
+    <rect x="28" y="32" width="80" height="9" rx="4" fill="#00658c"/>
+    <rect x="28" y="65" width="178" height="12" rx="6" fill="#dceaf0"/>
+    <rect x="28" y="92" width="140" height="12" rx="6" fill="#dceaf0"/>
+    <path d="M28 150c34-42 58 4 92-28 31-29 51 15 78-18 27-32 44-5 50-23" fill="none" stroke="#f28b45" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
