@@ -46,7 +46,7 @@ import {
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { formatBrl, publicPlans, type BillingCycle } from "@/lib/plans"
-import { contactUrl, loginUrl, registerUrl } from "@/lib/site-config"
+import { contactUrl, getRegisterUrl, loginUrl } from "@/lib/site-config"
 
 type DemoTab = "visao" | "cotas" | "mapa"
 
@@ -717,7 +717,9 @@ function PricingSection() {
         <div className="pricing-grid">
           {publicPlans.map((plan) => {
             const price = annual ? plan.annualMonthlyPrice : plan.monthlyPrice
-            const destination = plan.id === "full" && contactUrl ? contactUrl : registerUrl
+            const destination = plan.id === "full" && contactUrl
+              ? contactUrl
+              : getRegisterUrl(plan.id, billingCycle)
             return (
               <article
                 key={plan.id}
@@ -774,7 +776,7 @@ function PricingSection() {
         </div>
 
         <div className="pricing-notes">
-          <p><ShieldCheck aria-hidden="true" /> O Free é permanente e o Plus Agency pode ser testado por 14 dias, com até 2.000 respostas.</p>
+          <p><ShieldCheck aria-hidden="true" /> O Free é permanente. Planos pagos são ativados para a organização após a confirmação do checkout.</p>
           <p><Gauge aria-hidden="true" /> O Full usa limites altos e fair use. Respostas excluídas têm tolerância de 20% sobre as válidas.</p>
           <p className="pricing-notes__full"><LockKeyhole aria-hidden="true" /> O cadastro não realiza cobrança nem solicita cartão. A contratação online será liberada somente quando a conexão de pagamentos estiver pronta.</p>
         </div>

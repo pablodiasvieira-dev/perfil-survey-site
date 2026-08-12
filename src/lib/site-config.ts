@@ -10,6 +10,15 @@ export const appUrl = trimTrailingSlash(
 
 export const loginUrl = `${appUrl}/login?utm_source=site&utm_medium=cta&utm_campaign=landing`
 
-export const registerUrl = `${appUrl}/register?utm_source=site&utm_medium=pricing&utm_campaign=planos`
+export const getRegisterUrl = (plano: string, ciclo: "monthly" | "annual") => {
+  const params = new URLSearchParams({
+    plano,
+    ciclo,
+    utm_source: "site",
+    utm_medium: "pricing",
+    utm_campaign: "planos",
+  })
+  return `${appUrl}/register?${params.toString()}`
+}
 
 export const contactUrl = import.meta.env.VITE_CONTACT_URL?.trim() || ""
